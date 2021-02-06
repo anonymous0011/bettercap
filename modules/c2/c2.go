@@ -74,11 +74,11 @@ func NewC2(s *session.Session) *C2 {
 
 	mod.AddParam(session.NewBoolParameter("c2.server.tls",
 		"true",
-		"Enable TLS."))
+		"Enable or disable TLS."))
 
 	mod.AddParam(session.NewBoolParameter("c2.server.tls.verify",
 		"false",
-		"Enable TLS certificate validation."))
+		"Enable or disable TLS certificate validation."))
 
 	mod.AddParam(session.NewStringParameter("c2.operator",
 		mod.settings.operator,
